@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17110d">
+  <title>שוש ויעקב — אלבום 50 שנה</title>
+  <meta name="description" content="תצוגת ספר של אלבום חמישים שנות הנישואין של שוש ויעקב.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="שוש ויעקב — אלבום 50 שנה">
+  <meta property="og:image" content="assets/covers/front-cover.jpg">
+  <link rel="preload" as="image" href="assets/covers/front-cover.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="reader" id="reader">
+    <div class="room-light" aria-hidden="true"></div>
+
+    <section class="book-stage" aria-label="אלבום תמונות">
+      <div class="book-mount is-closed-front" id="book-mount">
+        <div class="page-block" aria-hidden="true"></div>
+        <div class="book" id="book"></div>
+        <div class="spine" aria-hidden="true"></div>
+      </div>
+      <div class="loading" id="loading" role="status">
+        <i></i><i></i><i></i>
+        <span class="sr-only">האלבום נטען</span>
+      </div>
+    </section>
+
+    <nav class="controls" aria-label="ניווט באלבום">
+      <button class="control" id="previous" type="button" aria-label="העמוד הקודם">
+        <span class="chevron chevron--left" aria-hidden="true"></span>
+      </button>
+      <div class="position" aria-live="polite">
+        <span id="current-number">01</span>
+        <span class="position-rule" aria-hidden="true"></span>
+        <span id="total-number">26</span>
+      </div>
+      <button class="control control--fullscreen" id="fullscreen" type="button" aria-label="מסך מלא">
+        <span class="fullscreen-icon" aria-hidden="true"></span>
+      </button>
+      <button class="control" id="next" type="button" aria-label="העמוד הבא">
+        <span class="chevron chevron--right" aria-hidden="true"></span>
+      </button>
+    </nav>
+
+    <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+  </main>
+  <script src="vendor/page-flip.browser.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
