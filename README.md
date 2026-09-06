@@ -1,6 +1,6 @@
 # Album flipbook
 
-A private-review website for Shosh and Yaakov's 50th-anniversary print album.
+A public review website for Shosh and Yaakov's 50th-anniversary print album.
 It displays the final front cover, 48 individual page leaves, and back cover in
 a proportioned book viewer. Both sides of every turning leaf are decoded before
 interaction, so the reverse page is present throughout the turn. The print
@@ -10,6 +10,10 @@ derivatives only.
 Each leaf mirrors one independently composed print page. Images never cross the
 fold, every interior page contains photography, and the inner 140 px of each
 printed page is reserved for the non-image center exclusion.
+
+The album content combines large foreground family photographs with authentic
+period imagery from the archive. Twenty spreads are family-led and four are
+chronological atmosphere spreads; only years appear inside the book.
 
 ## Local preview
 
@@ -22,10 +26,9 @@ arrow keys, Page Up/Page Down, or horizontal touch swipes.
 
 ## GitHub Pages
 
-This directory is ready to become the root of a GitHub repository. The included
-workflow deploys it when the repository's Pages source is set to **GitHub
-Actions** and a commit reaches `main`. Because the site contains private family
-photographs, confirm the repository and Pages visibility before publishing it.
+The included workflow deploys through GitHub Pages from `main` and from the
+active album-review branch. The repository and its family photographs are
+public.
 
 ## Source assets
 

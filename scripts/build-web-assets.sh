@@ -3,7 +3,9 @@ set -euo pipefail
 
 site_dir="$(cd "$(dirname "$0")/.." && pwd)"
 album_dir="$(cd "$site_dir/.." && pwd)"
-asset_build_dir="$(mktemp -d "$site_dir/.asset-build.XXXXXX")"
+asset_scratch_root="${LUPA_SCRATCH_ROOT:-/Users/guyso/Documents/AISlop}"
+mkdir -p "$asset_scratch_root"
+asset_build_dir="$(mktemp -d "$asset_scratch_root/lupa-asset-build.XXXXXX")"
 trap 'rm -rf "$asset_build_dir"' EXIT
 export TMPDIR="$asset_build_dir"
 mkdir -p "$site_dir/assets/covers" "$site_dir/assets/pages"
